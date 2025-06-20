@@ -15,34 +15,45 @@
         ></script>
 
         <title>Ghanem Fourniture Scolaire et Gestion</title>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
         <!-- Partie navbar avec logo -->
-        <nav>
-            <div class="nav-main">
-                <div class="nav-header">
-                    <img src="./img/Ghanem-logo.png" alt="photo-logo" />
-                    <i class="fa-solid fa-bars"></i>
+        <nav class="bg-white shadow-[0_5px_15px_rgba(0,0,0,0.3)]">
+            <div
+                class="max-w-[1170px] mx-auto flex items-center justify-between p-4 md:p-0 font-[Inter]"
+            >
+                <div class="flex items-center justify-between p-4 md:p-0">
+                    <img
+                        src="./img/Ghanem-logo.png"
+                        alt="photo-logo"
+                        class="h-[90px] w-[80px] mb-2"
+                    />
+                    <i
+                        class="fa-solid fa-bars text-[1.5rem] text-[#e94949] cursor-pointer md:hidden hover:text-black"
+                    ></i>
                 </div>
-                <div class="search-container">
+                <div
+                    class="hidden md:flex items-center border-2 border-gray-300 rounded-full p-1 bg-white shadow-sm"
+                >
                     <input
                         type="text"
                         placeholder="Rechercher..."
-                        class="search-input"
+                        class="border-none outline-none px-3 py-2 w-[200px] text-base rounded-l-full"
                     />
-                    <button class="search-button">🔍</button>
+                    <button class="text-lg px-3">🔍</button>
                 </div>
-                <ul class="nav-menu">
-                    <li>
+                <ul class="hidden md:flex space-x-8 text-sm">
+                    <li class="text-gray-700 hover:text-[#e94949] transition">
                         <a href="#">Acceuil</a>
                     </li>
-                    <li>
+                    <li class="text-gray-700 hover:text-[#e94949] transition">
                         <a href="#">A propos </a>
                     </li>
-                    <li>
+                    <li class="text-gray-700 hover:text-[#e94949] transition">
                         <a href="#">Produits</a>
                     </li>
-                    <li>
+                    <li class="text-gray-700 hover:text-[#e94949] transition">
                         <a href="#">Connexion </a>
                     </li>
                 </ul>
@@ -50,9 +61,16 @@
         </nav>
         <!-- Partie Image de cover glissante  -->
         <main>
-            <div class="bg-image" id="bg-image"></div>
-            <div class="container">
-                <h1>Bienvenue à notre magasin</h1>
+            <div
+                id="bg-image"
+                class="w-full h-screen bg-[url('https://images.unsplash.com/photo-1611758498818-bfdeec6dc3de?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-fixed"
+            ></div>
+            <div
+                class="font-[Inter] m-4 p-1 bg-[rgba(245,40,145,0.02)] text-justify space-y-4"
+            >
+                <h1 class="text-xl text-center font-semibold">
+                    Bienvenue à notre magasin
+                </h1>
                 <p>
                     je vous propose tout le matériel scolaire nécessaire aux
                     écoliers, collégiens et lycéens demandé par les professeurs.
@@ -90,32 +108,83 @@
             </div>
         </main>
         <!--Partie Articles -->
-        <section class="categories">
-            <h2>Nos incontournables pour petits et grands !</h2>
-            <div class="category-list">
-                <div class="category-item">
-                    <img src="./img/cas-dos-j.png" alt="Sac à dos" />
-                    <a href="#">Sacs à dos</a>
+        <section class="text-center my-12 px-4">
+            <h2 class="text-1xl md:text-2xl font-[Inter] font-medium mb-8">
+                Nos incontournables pour petits et grands !
+            </h2>
+            <div class="flex flex-wrap justify-center gap-8 text-sm">
+                <div class="w-28 text-center">
+                    <img
+                        src="./img/cas-dos-j.png"
+                        alt="Sac à dos"
+                        class="w-24 h-24 object-cover rounded-full bg-pink-50 p-2 shadow-md mx-auto"
+                    />
+                    <a
+                        href="#"
+                        class="block mt-2 font-semibold text-gray-700 hover:text-pink-500 transition duration-200"
+                        >Sacs à dos
+                    </a>
+                </div>
+                <div class="w-28 text-center">
+                    <img
+                        src="./img/fourniture.jpg"
+                        alt="fournitures"
+                        class="w-24 h-24 object-cover rounded-full bg-pink-50 p-2 shadow-md mx-auto"
+                    />
+                    <a
+                        href=""
+                        class="block mt-2 font-semibold text-gray-700 hover:text-pink-500 transition duration-200"
+                        >Fournitures</a
+                    >
                 </div>
                 <div class="category-item">
-                    <img src="./img/fourniture.jpg" alt="fournitures" />
-                    <a href="">Fournitures</a>
+                    <img
+                        src="./img/livres-t.avif"
+                        alt="livres"
+                        class="w-24 h-24 object-cover rounded-full bg-pink-50 p-2 shadow-md mx-auto"
+                    />
+                    <a
+                        href=""
+                        class="block mt-2 font-semibold text-gray-700 hover:text-pink-500 transition duration-200"
+                        >Livres</a
+                    >
                 </div>
                 <div class="category-item">
-                    <img src="./img/livres-t.avif" alt="livres" />
-                    <a href="">Livres</a>
+                    <img
+                        src="./img/emballage.jpg"
+                        alt="emballage"
+                        class="w-24 h-24 object-cover rounded-full bg-pink-50 p-2 shadow-md mx-auto"
+                    />
+                    <a
+                        href=""
+                        class="block mt-2 font-semibold text-gray-700 hover:text-pink-500 transition duration-200"
+                    >
+                        Emballage</a
+                    >
                 </div>
                 <div class="category-item">
-                    <img src="./img/emballage.jpg" alt="emballage" />
-                    <a href=""> Emballage</a>
+                    <img
+                        src="./img/mat-info.jpeg"
+                        alt="outils informatique"
+                        class="w-24 h-24 object-cover rounded-full bg-pink-50 p-2 shadow-md mx-auto"
+                    />
+                    <a
+                        href=""
+                        class="block mt-2 font-semibold text-gray-700 hover:text-pink-500 transition duration-200"
+                        >Outils informatique</a
+                    >
                 </div>
                 <div class="category-item">
-                    <img src="./img/mat-info.jpeg" alt="outils informatique" />
-                    <a href="">Outils informatique</a>
-                </div>
-                <div class="category-item">
-                    <img src="./img/extra.jpg" alt="extra" />
-                    <a href="">Extra</a>
+                    <img
+                        src="./img/autre.png"
+                        alt="autre"
+                        class="w-24 h-24 object-cover rounded-full bg-pink-50 p-2 shadow-md mx-auto"
+                    />
+                    <a
+                        href=""
+                        class="block mt-2 font-semibold text-gray-700 hover:text-pink-500 transition duration-200"
+                        >Autre</a
+                    >
                 </div>
             </div>
         </section>
