@@ -9,13 +9,15 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
         <script
             src="https://kit.fontawesome.com/61636df05d.js"
             crossorigin="anonymous"
         ></script>
 
         <title>Ghanem Fourniture Scolaire et Gestion</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+
     </head>
     <body>
         <!-- Partie navbar avec logo -->
@@ -27,7 +29,7 @@
                 <img
                     src="./img/Ghanem-logo.png"
                     alt="photo-logo"
-                    class="h-[90px] w-[80px] mb-2"
+                    class="h-[90px] w-[80px] mb-2 mr-8"
                 />
             </div>
             <button id="menu-toggle" class="text-2xl md:hidden">
@@ -37,7 +39,7 @@
             </button>
 
             <div
-                class="hidden md:flex items-center border-2 border-gray-300 rounded-full p-1 bg-white shadow-sm"
+                class="hidden md:flex items-center border-2 border-gray-300 rounded-full p-1 bg-white shadow-sm ml-12"
             >
                 <input
                     type="text"
@@ -46,35 +48,36 @@
                 />
                 <button class="text-lg px-3">🔍</button>
             </div>
-            <ul
-                id="nav-menu"
-                class="hidden flex-col text-center font-medium bg-white shadow-md absolute top-full left-0 w-full py-4 z-40 md:flex md:flex-row md:static md:shadow-none md:bg-transparent md:space-x-8 text-sm"
+            <ul id="nav-menu"
+                class="hidden flex-col text-center justify-end font-medium bg-white shadow-md absolute top-full left-0 w-full z-40 md:flex md:flex-row md:static md:shadow-none md:bg-green md:space-x-8 text-sm mr-2"
             >
-                <li class="py-2 md:py-0">
+                <li
+                class="py-2 md:py-0 active">
                     <a
                         href="#"
-                        class="text-gray-700 hover:bg-red-100 w-full block hover:text-[#e94949] transition"
+                        class="nav-link"
                         >Acceuil</a
                     >
                 </li>
                 <li class="py-2 md:py-0">
                     <a
                         href="#"
-                        class="text-gray-700 hover:bg-red-100 w-full block hover:text-[#e94949] transition"
+
                         >A propos
+                        <!-- class="text-gray-700 hover:bg-red-500 md:hover:bg-transparent w-full block hover:text-[#e94949] transition" -->
                     </a>
                 </li>
                 <li class="py-2 md:py-0">
                     <a
                         href="#"
-                        class="text-gray-700 hover:bg-red-100 w-full block hover:text-[#e94949] transition"
+
                         >Produits</a
                     >
                 </li>
                 <li class="py-2 md:py-0">
                     <a
                         href="#"
-                        class="text-gray-700 hover:bg-red-100 w-full block hover:text-[#e94949] transition"
+
                         >Connexion
                     </a>
                 </li>
